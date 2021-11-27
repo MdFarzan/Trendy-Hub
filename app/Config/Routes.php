@@ -33,6 +33,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+// *** sign-in & logout routes
+$routes->get('/admin/', 'Admin/AdminAuth::index');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
